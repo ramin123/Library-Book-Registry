@@ -1,0 +1,30 @@
+// Import Google fonts
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+/*=============Over ride =====*/
+@import 'variables';
+@import '~bootstrap/scss/bootstrap';
+
+@each $color, $value in $theme-colors {
+    .card-outline-#{$color} {
+        border-left: 3px solid $value;
+        color: $value;
+        background-color: #fff;
+    }
+}
+@each $color, $value in $theme-colors {
+    .btn-outline-#{$color}:hover {
+        color: #fff;
+    }
+}
+p {
+    font-size: 14px;
+}
+@each $color, $value in $theme-colors {
+    .alert-#{$color} {
+        color: #fff;
+        font-size: 14px;
+    }
+}

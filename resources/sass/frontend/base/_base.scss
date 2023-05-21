@@ -1,0 +1,90 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: $brand-color;
+  text-decoration: none;
+
+  @include on-event {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}
+
+.btn,
+a {
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+
+  @include on-event {
+    outline: 0;
+    @include boxshadow(none);
+  }
+}
+
+/**
+ * Basic styles for input fields
+ */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-focus-ring-color: none;
+  outline: none;
+
+  @include on-event {
+    @include boxshadow(none);
+  }
+}
+
+//styles for navbar-toggler
+.navbar-toggler {
+  padding: 10px 0;
+
+  border: 0;
+  border-radius: 0;
+
+  .icon-bar {
+    display: block;
+    height: 4px;
+    width: 29px;
+
+    background: #000;
+
+    @include transition(0.5s cubic-bezier(0.65, 0.05, 0.36, 1));
+
+    @include boxshadow(none);
+
+    &+.icon-bar {
+      margin-top: 4px;
+    }
+  }
+
+  &[aria-expanded="true"] {
+    .icon-bar {
+      &:first-child {
+        @include transform(rotate(225deg) translate(-6px, -5px));
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:last-child {
+        @include transform(rotate(-225deg) translate(-6px, 6px));
+      }
+    }
+  }
+
+  @include on-event() {
+    outline: 0;
+  }
+}

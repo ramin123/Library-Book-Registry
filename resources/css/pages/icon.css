@@ -1,0 +1,47 @@
+.l1 {
+    border: 1px solid white;
+    background-color: #418bca;
+}
+
+.l2 {
+    border: 1px solid white;
+    background-color: #00bc8c;
+}
+
+.l3 {
+    border: 1px solid white;
+    background-color: #5bc0de;
+}
+
+.l4 {
+    border: 1px solid white;
+    background-color: #f89a14;
+}
+
+.l5 {
+    border: 1px solid white;
+    background-color: #ef6f6c;
+}
+
+.l6 {
+    border: 1px solid white;
+    background-color: #a9b6bc;
+}
+
+/*background color for icon*/
+.clr {
+    background: #ebebeb;
+}
+/*margin for div*/
+.iconview {
+    width: 35px;
+}
+/*button styles in FA features*/
+.btn-custom-info {
+    padding: 5px 47px;
+    border-radius: 30px;
+}
+/*width and margin for animated icons*/
+.animated_icon_view {
+    width: 45px;
+}

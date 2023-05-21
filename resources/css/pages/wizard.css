@@ -1,0 +1,52 @@
+#rootwizard .nav.nav-pills {
+    margin-bottom: 25px;
+}
+.help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.has-error .help-block {
+    color: #ef6f6c;
+}
+.select2 {
+    width: 100% !important;
+}
+.pager {
+    padding-left: 0;
+    margin: 20px 0;
+    text-align: center;
+    list-style: none;
+}
+.pager li {
+    display: inline;
+}
+.tabbable a,
+#rootwizard a,
+#rootwizard1 a {
+    color: #3c8dbc !important;
+}
+.pager .disabled > a,
+.pager .disabled > a:focus,
+.pager .disabled > a:hover,
+.pager .disabled > span {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+}
+.pager .previous > a,
+.pager .previous > span {
+    float: left;
+}
+.pager li > a,
+.pager li > span {
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+.pager .next > a,
+.pager .next > span {
+    float: right;
+}

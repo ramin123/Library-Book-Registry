@@ -1,0 +1,192 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+   @if $self{
+    &,
+    &:active,
+    &:focus,
+    &:hover {
+      @content;
+    }
+  }
+  @else {
+    &:active,
+    &:focus,
+    &:hover {
+      @content;
+    }
+  }
+}
+
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+@mixin font-face($fontFamily, $path, $fileName, $svgLabel, $fontWeight: normal, $fontStyle: normal) {
+   @font-face{
+    font-family: $fontFamily;
+    src: url('#{$path + $fileName}.eot');
+    src: url('#{$path + $fileName}.eot?#iefix') format('embedded-opentype'), url('#{$path + $fileName}.woff') format('woff'), url('#{$path + $fileName}.ttf') format('truetype'), url('#{$path + $fileName}.svg##{$svgLabel}') format('svg');
+    font-weight: $fontWeight;
+    font-style: $fontStyle;
+  }
+}
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == "xs" {
+    @media screen and (max-width: 575px) {
+       @content;
+    }
+  }
+
+  @else if $breakpoint == "sm-down" {
+    @media screen and (max-width: 767px) {
+       @content;
+    }
+  }
+
+  @else if $breakpoint == "sm" {
+    @media (min-width: 576px) and (max-width: 767px) {
+       @content;
+    }
+  }
+
+  @else if $breakpoint == "sm-up" {
+    @media screen and (min-width: 576px) {
+       @content;
+    }
+  }
+
+  @else if $breakpoint == "md-down" {
+    @media screen and (max-width: 991px) {
+       @content;
+    }
+  }
+
+  @else if $breakpoint == "md" {
+    @media (min-width: 768px) and (max-width: 991px) {
+       @content;
+    }
+  }
+
+  @else if $breakpoint == "md-up" {
+    @media screen and (min-width: 768px) {
+       @content;
+    }
+  }
+
+  @else if $breakpoint == "lg-down" {
+    @media screen and (max-width: 1199px) {
+       @content;
+    }
+  }
+
+  @else if $breakpoint == "lg" {
+    @media (min-width: 992px) and (max-width: 1199px) {
+       @content;
+    }
+  }
+
+  @else if $breakpoint == "lg-up" {
+    @media screen and (min-width: 992px) {
+       @content;
+    }
+  }
+
+  @else if $breakpoint == "xl" {
+    @media screen and (min-width: 1200px) {
+       @content;
+    }
+  }
+}
+@mixin transition($properties...) {
+  -webkit-transition: $properties;
+  -moz-transition: $properties;
+  -ms-transition: $properties;
+  -o-transform: $properties;
+  transition: $properties;
+}
+@mixin transform($properties...) {
+  -webkit-transform: $properties;
+  -moz-transform: $properties;
+  -ms-transform: $properties;
+  -o-transform: $properties;
+  transform: $properties;
+}
+@mixin animation($properties...) {
+  -webkit-animation: $properties;
+  -moz-animation: $properties;
+  -ms-animation: $properties;
+  -o-animation: $properties;
+  animation: $properties;
+}
+@mixin boxshadow($properties...) {
+  -webkit-box-shadow: $properties;
+  -moz-box-shadow: $properties;
+  -ms-box-shadow: $properties;
+  -o-box-shadow: $properties;
+  box-shadow: $properties;
+}
+@mixin text-shadow($properties...) {
+  -webkit-text-shadow: $properties;
+  -moz-text-shadow: $properties;
+  -ms-text-shadow: $properties;
+  -o-text-shadow: $properties;
+  text-shadow: $properties;
+}
+@mixin linear-gradient($direction, $colors...) {
+ @if $direction == 'right' {
+   background: -webkit-linear-gradient(left, $colors);
+   background: -moz-linear-gradient(left, $colors);
+   background: linear-gradient(to $direction, $colors);
+ } @else if $direction == 'left' {
+   background: -webkit-linear-gradient(right, $colors);
+   background: -moz-linear-gradient(right, $colors);
+   background: linear-gradient(to $direction, $colors);
+ } @else {
+   background: -webkit-linear-gradient($direction, $colors);
+   background: linear-gradient($direction, $colors);
+ }
+ background: -o-linear-gradient($direction,$colors);
+}
+@mixin radial-gradient($properties...) {
+  background: -webkit-radial-gradient($properties);
+  background: -moz-radial-gradient($properties);
+  background: -o-radial-gradient($properties);
+  background: radial-gradient($properties);
+}
+@mixin keyframes($keyframesName) {
+   @-webkit-keyframes #{$keyframesName}{
+    @content;
+  }
+  @-moz-keyframes #{$keyframesName} {
+     @content;
+  }
+  @keyframes #{$keyframesName} {
+     @content;
+  }
+}
+@mixin user-select($property) {
+  -webkit-user-select: $property;
+  -moz-user-select: $property;
+  -ms-user-select: $property;
+  -o-user-select: $property;
+  user-select: $property;
+}
+
+@mixin placeholder() {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}

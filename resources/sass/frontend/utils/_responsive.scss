@@ -1,0 +1,15 @@
+// on col-*-1, width is too smal so have to override settings
+@media (max-width: 320px) {
+    .col-lg-1,
+    .col-md-1,
+    .col-sm-1,
+    .col-1 {
+        padding-right: 0px;
+    }
+    .col-lg-1 input,
+    .col-md-1 input,
+    .col-sm-1 input,
+    .col-1 input {
+        padding: 9px 9px;
+    }
+}

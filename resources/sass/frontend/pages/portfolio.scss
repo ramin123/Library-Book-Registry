@@ -1,0 +1,65 @@
+/* ---------- Portfolio Css ---------- */
+.carousel-inner .item > img {
+    width: 100%;
+}
+/* ---------- Mix Css Start ---------- */
+.mix {
+    display: none;
+}
+
+.mix img {
+    width: 220px;
+    margin: 5px;
+}
+/* ---------- //Mix css End ---------- */
+/* ---------- Portfolio images Css ---------- */
+.thumb_zoom img {
+    transition: all 1s ease;
+}
+/* ---------- Thumb Zoom images hover Css Start ---------- */
+.thumb_zoom img:hover {
+    transform: scale(1.45, 1.45);
+    opacity: 0.3;
+}
+/* ---------- //Thumb Zoom images hover Css End ---------- */
+/* ---------- Thumb Zoom  Css Start ---------- */
+.thumb_zoom {
+    display: inline-block;
+    overflow: hidden;
+    padding: 0px !important;
+    margin: 5px 20px 15px 5px;
+}
+/* ---------- //Thumb Zoom  Css End ---------- */
+/* ---------- Portfolio images Plus Icon Css Start ---------- */
+/* ---------- //Portfolio images Css End ---------- */
+/* ---------- Portfolio images Icon Section Start ---------- */
+.img-icon {
+    position: absolute;
+    z-index: 7;
+    color: #fff;
+    font-size: 17px !important;
+    background-color: #01bc8c;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    top: 87px;
+    padding-top: 6px;
+    padding-left: 8px;
+    opacity: 0.75;
+}
+.fa-search-plus {
+    left: 120%;
+}
+.fa-link {
+    left: 187%;
+}
+/* ---------- //Portfolio images Icon Section End ---------- */
+@media (max-width: 767px) {
+    .fa-search-plus {
+        left: 60%;
+    }
+    .fa-link {
+        left: 90%;
+    }
+}
+/* _________ //Portfolio End _________ */

@@ -1,0 +1,9 @@
+@extends('layouts.app')
+
+@section('content')
+    @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.show_fields')
+
+    <div class="form-group">
+           <a href="{!! route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index') !!}" class="btn btn-secondary">Back</a>
+    </div>
+@endsection

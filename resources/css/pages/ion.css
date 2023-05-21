@@ -1,0 +1,129 @@
+#RGB {
+    height: 20px;
+    background: rgb(128, 128, 128);
+}
+#RC .slider-selection {
+    background: #ff908d;
+}
+#RC .slider-handle {
+    background: #ff908d;
+}
+#GC .slider-selection {
+    background: #22ddad;
+}
+#GC .slider-handle {
+    background: #22ddad;
+}
+#BC .slider-selection {
+    background: #62aceb;
+}
+#BC .slider-handle {
+    border-bottom-color: #62aceb;
+}
+#RED .slider-selection {
+    background: #ef6f6c;
+}
+#RED .slider-handle {
+    background: #ef6b69;
+}
+#R,
+#G,
+#B {
+    width: 300px;
+}
+#ex1Slider .slider-selection {
+    background: #bababa;
+}
+
+#ex1Slider .slider-handle,
+#ex2Slider .slider-handle,
+#bootstrap_slider6 .slider-handle,
+#ex26Slider .slider-handle,
+#ex6Slider .slider-handle,
+#ex7Slider .slider-handle,
+#ex8Slider .slider-handle,
+#ex5Slider .slider-handle {
+    background: #62aceb;
+}
+#ex2 .slider-selection {
+    background: #62aceb;
+}
+#ex3Slider .slider-handle,
+#ex4Slider .slider-handle {
+    background: #00bc8c;
+}
+#RED .slider-selection {
+    background: #62aceb;
+}
+#RED .slider-handle {
+    background: #62aceb;
+}
+.slider-disabled .slider-selection {
+    background: #aaaaaa !important;
+}
+.slider-disabled .slider-handle {
+    background: #aaaaaa !important;
+}
+#ex8 .slider-selection {
+    background: #62aceb;
+}
+#ex8 .slider-handle {
+    background: #62aceb;
+}
+#ex9Slider .slider-selection {
+    background: #62aceb;
+}
+#ex9Slider .slider-handle {
+    background: #62aceb;
+}
+.slider {
+    background: none;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+    #destroyEx5Slider {
+        margin-top: 5px;
+    }
+}
+
+.well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.slider-handle.custom::before {
+    color: #62aceb;
+}
+
+/*page level css added here*/
+#ex1Slider .slider-selection {
+    background: #bababa;
+}
+.tooltip.tooltip-main {
+    margin-top: -40px;
+}
+.slider-handle:hover .tooltip {
+    opacity: 1;
+}
+.slider-horizontal .slider-handle:hover .slider-horizontal .tooltip.show {
+    opacity: 1;
+}
+.slider_tooltip .tooltip.tooltip-main.tooltip-top {
+    opacity: 0.9 !important;
+}
+.irs--modern .irs-bar {
+    background: #67c5df;
+}
+irs--modern .irs-from {
+    background: #67c5df;
+}
+.irs--modern .irs-from,
+.irs--modern .irs-to,
+.irs--modern .irs-single {
+    background: #67c5df;
+}

@@ -1,0 +1,127 @@
+/*global css*/
+.right-side {
+    margin-left: 0;
+}
+/*page level*/
+.horizontal_menu {
+    /*background-color : #FAFAFA;*/
+    background-color: #515763;
+    border-bottom: 0;
+    /*padding          : 0 10%;*/
+    padding: 0 6%;
+}
+.slimmenu .has-submenu .menu-list {
+    /*font-weight: 600;*/
+    /*color: #666;*/
+    color: #fff;
+}
+.slimmenu .has-submenu .active {
+    background: #414151;
+    color: #fff;
+}
+ul.slimmenu > li {
+    width: 16%;
+}
+ul.slimmenu li > ul {
+    padding-left: 0;
+}
+ul.slimmenu li .sub-toggle {
+    background: none;
+}
+ul.slimmenu li ul {
+    top: 102%;
+    border: 1px solid #dcdcdc;
+    border-top: none;
+}
+ul.slimmenu li ul li a {
+    padding: 12px 16px;
+    width: 100%;
+}
+ul.slimmenu li ul li,
+ul.slimmenu li {
+    /*background : #fff;*/
+    background: #515763;
+}
+
+ul.slimmenu li a:hover {
+    /*background : #f1f1f1;*/
+    background: #515763;
+}
+.slimmenu .has-submenu .sub-list {
+    font-size: 13px !important;
+}
+.slimmenu .has-submenu ul li a {
+    font-size: 12px !important;
+}
+#navigation .has-submenu ul li {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+}
+@media (max-width: 992px) {
+    #navigation .has-submenu ul li {
+        background-color: #454a54;
+    }
+}
+
+ul.slimmenu li ul {
+    border: none;
+}
+/*for smaller screens hemburger*/
+.menu-collapser {
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    margin: 2px;
+}
+ul.collapsed {
+    /*border : 1px solid #ccc;*/
+}
+.Sample_placehold {
+    width: 100%;
+}
+@media screen and (min-width: 993px) {
+    .main-menu:after {
+        content: '';
+        height: 100%;
+        width: 1px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #3b3b3b;
+    }
+    .option-one {
+        width: 18% !important;
+    }
+    .horizontal_menu {
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid rgba(57, 57, 57, 0.42);
+    }
+}
+
+ul.slimmenu li a {
+    font-size: 14px;
+    color: #fff;
+}
+ul.slimmenu li .sub-toggle > i {
+    color: #fff;
+}
+
+body > .header .navbar {
+    margin-left: 0;
+}
+
+.menu-collapser {
+    background-color: transparent;
+    float: right;
+    border: none;
+    width: 10%;
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+    .messages-menu > .dropdown-menu,
+    .notifications-menu > .dropdown-menu,
+    .notifications-menu > .dropdown-menu {
+        right: -191px !important;
+    }
+}

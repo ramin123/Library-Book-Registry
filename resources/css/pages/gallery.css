@@ -1,0 +1,10 @@
+/***
+gallery  custom css
+***/
+.content {
+    padding: 20px 15px;
+    background: #fff !important;
+}
+.tab-pane {
+    display: none;
+}

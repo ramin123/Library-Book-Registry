@@ -1,0 +1,84 @@
+/*** ---------- News Css ---------- ***/
+
+.comments img {
+    max-width: 70px;
+}
+.news_category label {
+    padding: 2px 5px;
+}
+.tab-content img {
+    width: 60px;
+    height: 60px;
+}
+.tags .btn-secondary,
+.tag .btn {
+    background-color: #fff;
+    margin: 4px 0px;
+    border-bottom: 1px solid #ddd !important;
+}
+.tags {
+    margin-top: 5%;
+}
+/*** ---------- //News Css End ---------- ***/
+/*** ---------- News Item Css ---------- ***/
+
+.thumbnail h3 {
+    margin-top: 2px;
+}
+small {
+    margin-top: -5px;
+    margin-bottom: 0px;
+}
+
+.media:not(:last-child) {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ececec;
+}
+
+.media .media-object {
+    max-height: 95px;
+    max-width: 95px;
+    object-fit: cover;
+}
+
+.lifestyle img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.height_180 {
+    max-height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sports-content {
+    max-height: 120px;
+    overflow: hidden;
+}
+
+.sports-height {
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+p a {
+    color: var(--primary) !important;
+}
+
+.tabbable-line > .nav-tabs {
+    border: none;
+}
+.tabbable-line > .nav-tabs > li {
+    background-color: transparent !important;
+}
+
+.tabbable-line > .nav-tabs .nav-link.active {
+    border-bottom: 4px solid var(--danger) !important;
+}
+
+/*** ---------- //News Item Css End ---------- ***/

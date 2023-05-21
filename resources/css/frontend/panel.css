@@ -1,0 +1,9 @@
+.clickable {
+    cursor: pointer;
+}
+
+/* ---------- Customized Bootstrap Button ---------- */
+//TODO: move this to responsive utilities section with more generic class name
+
+/* ---------- //Customized Bootstrap Button End---------- */
+/*** ---------- //Panel custom css End----------***/

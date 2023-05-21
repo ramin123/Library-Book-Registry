@@ -1,0 +1,37 @@
+/*
+ *  over-riding html elements
+*/
+body {
+    font-size: 14px;
+}
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 18px;
+}
+h6 {
+    font-size: 12px;
+}
+blockquote {
+    padding: 10px 20px;
+}
+
+.dropdown-item:active {
+    background-color: transparent !important;
+}
+
+.indexpage.navbar-nav > .nav-item .nav-link:hover {
+    color: #01bc8c;
+}
+
+/*** custom code added by seenu **/
+.fs16 {
+    font-size: 16px;
+}

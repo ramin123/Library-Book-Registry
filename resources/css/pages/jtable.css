@@ -1,0 +1,66 @@
+.ui-widget-content {
+    z-index: 99999;
+}
+.ui-widget-overlay {
+    z-index: 9999;
+    opacity: 0.6;
+}
+.ui-widget-overlay {
+    position: fixed;
+}
+.ui-widget-overlay {
+    background: #272626;
+}
+.ui-dialog {
+    width: 30% !important;
+    left: 35% !important;
+}
+select.form-control {
+    padding: 2px 12px;
+    height: 23px;
+}
+.ui-dialog-titlebar {
+    background-color: #fff;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+}
+.ui-dialog,
+.ui-dialog-buttonpane {
+    border-color: #e5e5e5 !important;
+}
+.ui-dialog {
+    border-radius: 5px;
+}
+form.jtable-dialog-form div.jtable-input-field-container {
+    border: none;
+}
+.ui-dialog-titlebar-close {
+    display: none;
+}
+.ui-dialog-buttonpane {
+    border-top-width: 1px !important;
+}
+.jtable-page-size-change span,
+.jtable-page-size-change select,
+.jtable-goto-page span,
+.jtable-goto-page select {
+    display: inline-block;
+}
+select.form-control {
+    width: 70px;
+    margin-left: 5px;
+}
+div.jtable-main-container
+    > table.jtable
+    > tbody
+    > tr.jtable-data-row
+    > td
+    > .jtable-edit-command-button,
+div.jtable-main-container
+    > table.jtable
+    > tbody
+    > tr.jtable-data-row
+    > td
+    > .jtable-delete-command-button {
+    opacity: 1;
+}

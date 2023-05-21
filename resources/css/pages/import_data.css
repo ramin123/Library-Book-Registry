@@ -1,0 +1,49 @@
+.import {
+    margin-top: 15px;
+}
+.import_btn {
+    margin-top: -26px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+    .dataTables_length {
+        margin-top: 10px;
+    }
+}
+.img_flag {
+    margin-right: 10px;
+}
+.btn_search {
+    margin-top: 25px;
+}
+.show_hide button {
+    margin-bottom: 18px;
+}
+.checkbox {
+    display: block;
+    min-height: 0;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.dropdown-toggle.menu2 + ul:hover,
+.dropdown-toggle.menu2:hover + ul {
+    display: block;
+    margin-top: -18px;
+}
+.panel-heading > .dropdown .dropdown-toggle {
+    color: #fff;
+}
+.select2.select2-container {
+    width: 100% !important;
+}
+.ui-widget-shadow {
+    box-shadow: 0 0 5px #aaa;
+}
+table.dataTable {
+    width: 100% !important;
+}
+.dataTables_scrollHeadInner {
+    width: auto !important;
+}
