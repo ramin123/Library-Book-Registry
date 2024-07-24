@@ -68,9 +68,6 @@ php artisan serve
 
 Contributions are welcome! Please open an issue or a pull request to discuss any changes or additions.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
