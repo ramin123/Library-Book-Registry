@@ -74,7 +74,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
-- This project was created as a test task for a PHP developer position.
 - Special thanks to the Laravel/Yii2 community for their documentation and support.
 
 ---
