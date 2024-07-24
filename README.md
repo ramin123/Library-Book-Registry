@@ -1,6 +1,3 @@
-Based on the test task you've described, here's a `README.md` file template that you can use for your GitHub repository. This template assumes you've implemented the project using either Laravel or Yii2. Please ensure you replace placeholders and customize the content to accurately reflect your project's details.
-
-```markdown
 # Library Book Registry
 
 This project is a simple registry of books in a library, implemented using PHP and the [Laravel/Yii2](https://laravel.com/docs) PHP framework.
